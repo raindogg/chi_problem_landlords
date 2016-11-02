@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To return all problem landlords:
+
+```ruby
+ChiProblemLandlords::Landlord.all
+```
+
+To find a specific problem landlord:
+
+```ruby
+ChiProblemLandlords::Landlord.find(3) # or whatever number.
+```
 
 ## Development
 
