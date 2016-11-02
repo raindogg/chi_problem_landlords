@@ -3,6 +3,7 @@ require "unirest"
 
 module ChiProblemLandlords
   class Landlord
+
     attr_accessor :community_area, :address, :respondent
     def initialize(hash)
       @community_area = hash["community_area"]
@@ -40,7 +41,7 @@ module ChiProblemLandlords
     private
 
     def self.convert_array_to_objects(landlord_array)
-      collection
+      collection = []
       landlord_array.each do |landlord_hash|
         collection << Landlord.new(landlord_hash)
       end
