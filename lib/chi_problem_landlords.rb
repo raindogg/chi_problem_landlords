@@ -1,4 +1,5 @@
 require "chi_problem_landlords/version"
+require "unirest"
 
 module ChiProblemLandlords
   class Landlord
