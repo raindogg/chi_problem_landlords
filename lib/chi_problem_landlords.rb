@@ -29,15 +29,6 @@ module ChiProblemLandlords
       convert_array_to_objects(Unirest.get("https://data.cityofchicago.org/resource/dip3-ud6z.json?#{search_string}").body)
     end
 
-    # class Landlord
-    #   attr_accessor :community_area, :address, :respondent
-    #   def initialize(hash)
-    #     @community_area = hash["community_area"]
-    #     @address = hash["address"]
-    #     @respondent = hash["respondent"]
-    #   end
-    # end
-
     private
 
     def self.convert_array_to_objects(landlord_array)

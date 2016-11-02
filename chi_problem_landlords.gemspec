@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A way to list the problem landlords in Chicago using PORO."
   spec.description   = "A list of all the problem landlords in Chicago and their location, as PORO. No messing with JSON required!"
-  # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/raindogg/chi_problem_landlords"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
