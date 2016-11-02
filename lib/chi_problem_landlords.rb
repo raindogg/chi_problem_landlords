@@ -4,7 +4,7 @@ require "unirest"
 module ChiProblemLandlords
   class Landlord
     attr_accessor :community_area, :address, :respondent
-    def intialize(hash)
+    def initialize(hash)
       @community_area = hash["community_error"]
       @address = hash["address"]
       @respondent = hash["respondent"]
