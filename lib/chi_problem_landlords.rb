@@ -5,7 +5,7 @@ module ChiProblemLandlords
   class Landlord
     attr_accessor :community_area, :address, :respondent
     def initialize(hash)
-      @community_area = hash["community_error"]
+      @community_area = hash["community_area"]
       @address = hash["address"]
       @respondent = hash["respondent"]
     end
