@@ -13,6 +13,7 @@ module ChiProblemLandlords
     def all
       collection = []
       Unirest.get("https://data.cityofchicago.org/resource/dip3-ud6z.json").body.each do |landlord_hash|
+        p landlord_hash
         collection << Landlord.new(landlord_hash)
       end
       collection
